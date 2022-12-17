@@ -23,6 +23,7 @@ const setItemPrice = (price: StringOrNum): void => {
         typeGuard = price
     }
 }
+setItemPrice(50)
 
 // 심화 유니온
 interface Car {
@@ -37,9 +38,9 @@ interface Mobile {
     call(): void
 }
 
+// 검사해야할 항목이 많아지면 switch가 좋다.
 function getGift(gift: Car | Mobile) {
-    console.log(gift.color)
-    
+    console.log(gift.color) 
     if (gift.name === "Car") {
         gift.start()
     } else {
@@ -47,4 +48,25 @@ function getGift(gift: Car | Mobile) {
     }
 }
 
-setItemPrice(50)
+
+
+// Intersection Types
+
+interface Car_Intersection {
+    name : string
+    start() : void
+}
+
+interface Toy_Intersection {
+    name : string
+    color : string
+    price : number
+}
+
+// &로 표기 교차 타입은 여러개의 타입을 하나로 합쳐주는 역활로 필요한 모든 기능을 가진 하나의 타입이 만들어진다.
+const toyCar: Toy_Intersection & Car_Intersection = {
+    name : '타요버스',
+    start() {},
+    color : "blue",
+    price : 1000,
+};

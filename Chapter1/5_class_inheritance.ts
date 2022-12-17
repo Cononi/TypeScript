@@ -31,3 +31,4 @@ let infoItem:info = {
 let man = new Man(29,'남',infoItem)
 
 man.showName()
+
