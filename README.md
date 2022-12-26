@@ -11,8 +11,8 @@
 ## 2. 실행 준비
 
 <aside>
-💡 sudo npm install -g typescript
--g (글로벌 설치 - 전역)
+💡 sudo npm install -g typescript  
+💡 sudo npm install -g typescript  
 
 </aside>
 
