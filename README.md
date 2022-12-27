@@ -11,9 +11,16 @@
 ## 2. 실행 준비
 
 <aside>
-💡 sudo npm install -g typescript
--g (글로벌 설치 - 전역)
-
+```tsx
+// yarn 사용
+sudo yarn -g add typescript
+// local 설치
+sudo yarn -g  add typescript --dev
+    
+// npm
+sudo npm install typescript -g
+```
+    
 </aside>
 
 ## 3. 파일 생성 및 기본 설정 ( 공부 한다 가정 )
