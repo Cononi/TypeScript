@@ -20,10 +20,7 @@ sudo yarn -g  add typescript --dev
     
 // npm
 sudo npm install typescript -g
-```
-</aside>
-
-
+```</aside>
 
 ## 3. 파일 생성 및 기본 설정 ( 공부 한다 가정 )
 
